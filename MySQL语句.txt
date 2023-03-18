@@ -1,0 +1,25 @@
+user表创建
+  user = {
+    id: string 255
+    userName: string 255
+    password: string 255
+    city: string
+    email: string 255
+    userCode: string 255
+    phone: number
+    status: number
+    roleName: number
+    createDate: number
+  }
+  CREATE TABLE `book_admin`.`user` ( 
+    `id` VARCHAR(255) NOT NULL , 
+    `userName` VARCHAR(255) NOT NULL , 
+    `password` VARCHAR(255) NOT NULL , 
+    `city` VARCHAR(255) NOT NULL , 
+    `email` VARCHAR(255) NOT NULL , 
+    `userCode` VARCHAR(255) NOT NULL , 
+    `phone` INT NOT NULL , 
+    `status` INT NOT NULL DEFAULT '1' , 
+    `roleName` INT NOT NULL DEFAULT '用户' , 
+    `createDate` INT NOT NULL 
+  ) ENGINE = InnoDB;
